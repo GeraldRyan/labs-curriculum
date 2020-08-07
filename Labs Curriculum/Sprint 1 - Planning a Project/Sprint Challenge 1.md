@@ -11,16 +11,34 @@
 Hiring managers don't just want to see what you built, they want to see the reasoning behind it. Here are some questions surveyed hiring managers said they would ask about a project:
 
 - "How did you decide what to build?"
+
+We found a client that needed a web application built. The project looked interesting and challenging. They needed a map integrated into their site with markers that can be clicked on. We used mapbox
+
 - "Why is this feature important?"
+
+This feature is the essence of what they do as an entity. They build bridges where they are needed most for remote villagers that would otherwise not get access. A map is the optimal way to visualize these, and an interactive map is much more powerful and useful to the client.  
+
 - "Was this a good choice? What would you do differently if you had to do it over again?"
+
+Yes, a map here is essential. 
 
 We took these questions and cooked them into your labs experience. Please answer the following questions as you would in an interview. Remember, hiring managers care about the **process** and the **why** of building something even more than the what.
 
 ### Questions you need to answer
 
 1. Describe your **process** of breaking a release into user stories.
+
+a. study the description of what the client needs and study their background. 
+b. interview the client and enquire as to their expected user experience and interaction with the tool. 
+c. evaulate privilege concerns and authorization, authentication
+
 2. Choose a user story. Describe your **reasoning** as you broke down that particular user story into individual tasks.
+
+Admin user adds a bridge to the list, or edits or deletes. Task is first of all build the guest user function to display an interactive list of bridges with the ability to filter by specific criteria and search. Then product a separate authorization system into the site. Users with select token given via email by other authorized user sent via send grid can register for an account and be given login credentials where they get a token and they can edit lists. Basic react stuff. 
+
 3. How long do you think the above user story will take to complete? Explain your reasoning.
+
+5 days or less to get 75% of the way, a few week or more to get it polished and ready to ship. It is generally like this with projects.
 
 ## Prompt 2 - Communicating Technical Decisions
 
@@ -34,8 +52,16 @@ These sorts of questions inform your entire labs experience. You made a few tech
 ### Questions you need to answer
 
 1. Describe a technical decision you made. How did you make that decision?
+
+- We decided to use the Mapbox API as it has a speed of loading, access to many great styles and features and is free and easy to use. 
+
 2. What are some of the risks given the decision you made?
+
+- It is a pretty stable established technology, so there is not a great risk. 
+
 3. What challenges do you foresee in using the architecture your team selected?
+
+- There is a learning curve to using it but there is a learning curve for any alternative and this is a necessary feature. 
 
 ## Prompt 3 - Professional Development 
 
@@ -55,6 +81,7 @@ Add a link to your Linkedin in your sprint challenge submission document.
 
 ## About Section
 
+
 - [ ]  Wrote a minimum of 3 sentences to describe my technical skills, background, interests, and passions. (Also feel free to include key professional accomplishments.)
 
 ## Experience Section
@@ -68,7 +95,6 @@ Add a link to your Linkedin in your sprint challenge submission document.
     - [ ]  Did not use pronouns such as: I, we, they, you, me, us
 
 ## Education
-
 - [ ]  Listed all education and relevant certifications: including name of the institution, degree type, and date the degree was received or will be received `i.e. May 2020` or `Expected July 2025`
     - [ ]  I **did** link to Lambda School properly (Lambda logo saved)
 
